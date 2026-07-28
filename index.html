@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beancraft — Crafted Coffee, Islamabad</title>
+  <meta name="description"
+    content="Beancraft is Islamabad's craft coffee house. Order hand-sourced coffee, seasonal brews, and freshly baked snacks online." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'><path d='M8 16h18l-2.5 15H10.5L8 16z' fill='%23A5836F' stroke='%23A5836F' stroke-width='1.8'/><path d='M26 19h4a3.5 3.5 0 010 7h-4' stroke='%23A5836F' stroke-width='1.8' fill='none' stroke-linecap='round'/></svg>"
+    type="image/svg+xml" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ══════════════════════ HEADER ══════════════════════ -->
+  <header id="site-header">
+    <div class="container header-inner">
+
+      <a href="#home" class="logo" aria-label="Beancraft — go to homepage">
+        <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M8 16h18l-2.5 15H10.5L8 16z" fill="#A5836F" fill-opacity="0.2" stroke="#A5836F" stroke-width="1.8"
+            stroke-linejoin="round" />
+          <path d="M26 19h4a3.5 3.5 0 010 7h-4" stroke="#A5836F" stroke-width="1.8" stroke-linecap="round" />
+          <path d="M13 12 Q14.5 9.5 13 7" stroke="#A5836F" stroke-width="1.6" stroke-linecap="round" />
+          <path d="M18 12 Q19.5 9.5 18 7" stroke="#A5836F" stroke-width="1.6" stroke-linecap="round" />
+          <path d="M23 12 Q24.5 9.5 23 7" stroke="#A5836F" stroke-width="1.6" stroke-linecap="round" />
+        </svg>
+        <span class="logo-text">Beancraft</span>
+      </a>
+
+      <nav id="main-nav" aria-label="Main navigation">
+        <button class="hamburger" id="hamburger" aria-expanded="false" aria-controls="nav-menu"
+          aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul id="nav-menu" class="nav-menu" role="list">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#best-sellers" class="nav-link">Best Sellers</a></li>
+          <li><a href="#menu" class="nav-link">Menu</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="cart-btn" id="cart-btn" aria-label="Open cart, 0 items">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+          stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="9" cy="21" r="1" />
+          <circle cx="20" cy="21" r="1" />
+          <path d="M1 1h4l2.68 13.39a2 2 0 001.99 1.61h9.72a2 2 0 001.99-1.61L23 6H6" />
+        </svg>
+        <span class="cart-count" id="cart-count" aria-live="polite" aria-atomic="true">0</span>
+      </button>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ══════════════════════ HERO ══════════════════════ -->
+    <section id="home" class="hero" aria-labelledby="hero-heading">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <span class="hero-eyebrow">Islamabad's Craft Coffee House</span>
+          <h1 id="hero-heading">Every Cup,<br>Crafted<br>with Care.</h1>
+          <p class="hero-tagline">Where hand-sourced beans meet unhurried ritual. Order your perfect brew — fresh, warm,
+            and waiting for you.</p>
+          <div class="hero-cta">
+            <a href="#menu" class="btn btn-primary">Order Now</a>
+            <a href="#best-sellers" class="btn btn-outline">Best Sellers</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-image-wrap">
+            <img src="images/hero.jpg"
+              alt="A skilled barista carefully pouring latte art into a ceramic cup in a warm, sunlit café" width="600"
+              height="500" />
+            <div class="hero-badge" aria-hidden="true">
+              <span class="hero-badge-dot"></span>
+              <span>Open Now · 7am – 11pm</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════ BEST SELLERS ══════════════════════ -->
+    <section id="best-sellers" class="section-best-sellers" aria-labelledby="bs-heading">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="bs-heading">Best Sellers</h2>
+          <p class="section-subtitle">The cups our regulars keep coming back for.</p>
+          <div class="section-rule" aria-hidden="true"></div>
+        </div>
+        <div class="bs-grid">
+
+          <div class="bs-card" data-product-id="cappuccino" role="button" tabindex="0"
+            aria-label="Cappuccino — Rs. 380. Click to view details and add to cart.">
+            <div class="bs-card-img">
+              <img src="images/cappuccino.jpg"
+                alt="A cappuccino with thick velvety foam and cocoa dusting in a white ceramic cup" width="400"
+                height="300" />
+            </div>
+            <div class="bs-card-body">
+              <span class="bs-tag">☕ Top Pick</span>
+              <div class="bs-card-name">Cappuccino</div>
+              <div class="bs-card-desc">Equal parts espresso, steamed milk, and airy foam.</div>
+              <div class="bs-card-footer">
+                <span class="bs-card-price">Rs. 380</span>
+                <span class="bs-order-hint" aria-hidden="true">Tap to order →</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="bs-card" data-product-id="cold-brew" role="button" tabindex="0"
+            aria-label="Cold Brew — Rs. 450. Click to view details and add to cart.">
+            <div class="bs-card-img">
+              <img src="images/cold-brew.jpg"
+                alt="Cold brew coffee poured over ice in a tall clear glass with rich dark colouring" width="400"
+                height="300" />
+            </div>
+            <div class="bs-card-body">
+              <span class="bs-tag">🧊 Bestseller</span>
+              <div class="bs-card-name">Cold Brew</div>
+              <div class="bs-card-desc">18-hour steep. Smooth, bold, naturally sweet.</div>
+              <div class="bs-card-footer">
+                <span class="bs-card-price">Rs. 450</span>
+                <span class="bs-order-hint" aria-hidden="true">Tap to order →</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="bs-card" data-product-id="mocha" role="button" tabindex="0"
+            aria-label="Mocha — Rs. 480. Click to view details and add to cart.">
+            <div class="bs-card-img">
+              <img src="images/mocha.jpg"
+                alt="A mocha in a white mug topped with whipped cream and a dark chocolate drizzle" width="400"
+                height="300" />
+            </div>
+            <div class="bs-card-body">
+              <span class="bs-tag">🍫 Fan Fave</span>
+              <div class="bs-card-name">Mocha</div>
+              <div class="bs-card-desc">Espresso, dark chocolate sauce, and whipped cream.</div>
+              <div class="bs-card-footer">
+                <span class="bs-card-price">Rs. 480</span>
+                <span class="bs-order-hint" aria-hidden="true">Tap to order →</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="bs-card" data-product-id="croissant" role="button" tabindex="0"
+            aria-label="Croissant — Rs. 320. Click to view details and add to cart.">
+            <div class="bs-card-img">
+              <img src="images/croissant.jpg"
+                alt="A golden, flaky butter croissant on a rustic wooden board with steam rising" width="400"
+                height="300" />
+            </div>
+            <div class="bs-card-body">
+              <span class="bs-tag">🥐 Morning Must</span>
+              <div class="bs-card-name">Croissant</div>
+              <div class="bs-card-desc">Buttery, flaky, baked fresh every morning.</div>
+              <div class="bs-card-footer">
+                <span class="bs-card-price">Rs. 320</span>
+                <span class="bs-order-hint" aria-hidden="true">Tap to order →</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════ FULL MENU ══════════════════════ -->
+    <section id="menu" class="section-menu" aria-labelledby="menu-heading">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="menu-heading">Our Menu</h2>
+          <p class="section-subtitle">Freshly made, every single day.</p>
+          <div class="section-rule" aria-hidden="true"></div>
+        </div>
+
+        <!-- — Coffee — -->
+        <div class="menu-category">
+          <h3 class="category-heading">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M18 8h1a4 4 0 010 8h-1" />
+              <path d="M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z" />
+              <line x1="6" y1="1" x2="6" y2="4" />
+              <line x1="10" y1="1" x2="10" y2="4" />
+              <line x1="14" y1="1" x2="14" y2="4" />
+            </svg>
+            Coffee
+          </h3>
+          <div class="menu-grid">
+
+            <article class="menu-card" data-product-id="espresso" tabindex="0"
+              aria-label="Espresso — Rs. 280. Click to view details and add to cart.">
+              <div class="card-img">
+                <img src="images/espresso.jpg"
+                  alt="A single espresso shot in a small white ceramic cup showing a rich golden crema layer"
+                  width="180" height="180" />
+              </div>
+              <div class="card-info">
+                <div>
+                  <div class="card-name">Espresso</div>
+                  <p class="card-desc">Bold, concentrated shot of pure single-origin Arabica. Intense and deeply
+                    satisfying.</p>
+                </div>
+                <div class="card-footer">
+                  <span class="card-price">Rs. 280</span>
+                  <span class="card-add-btn" aria-hidden="true">+ Add</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="menu-card" data-product-id="cappuccino" tabindex="0"
+              aria-label="Cappuccino — Rs. 380. Click to view details and add to cart.">
+              <div class="card-img">
+                <img src="images/cappuccino.jpg"
+                  alt="A cappuccino with thick velvety foam dusted with cocoa in a white ceramic cup" width="180"
+                  height="180" />
+              </div>
+              <div class="card-info">
+                <div>
+                  <div class="card-name">Cappuccino</div>
+                  <p class="card-desc">Espresso, steamed milk, and thick airy foam. Our most-ordered morning companion.
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <span class="card-price">Rs. 380</span>
+                  <span class="card-add-btn" aria-hidden="true">+ Add</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="menu-card" data-product-id="latte" tabindex="0"
+              aria-label="Latte — Rs. 420. Click to view details and add to cart.">
+              <div class="card-img">
+                <img src="images/latte.jpg" alt="A tall latte glass with a rosette latte art design on top" width="180"
+                  height="180" />
+              </div>
+              <div class="card-info">
+                <div>
+                  <div class="card-name">Latte</div>
+                  <p class="card-desc">Creamy espresso softened by silky steamed milk. Available in oat, almond, or
+                    whole milk.</p>
+                </div>
+                <div class="card-footer">
+                  <span class="card-price">Rs. 420</span>
+                  <span class="card-add-btn" aria-hidden="true">+ Add</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="menu-card" data-product-id="cold-brew" tabindex="0"
+              aria-label="Cold Brew — Rs. 450. Click to view details and add to cart.">
+              <div class="card-img">
+                <img src="images/cold-brew.jpg"
+                  alt="Cold brew coffee poured over ice in a tall clear glass with a rich dark appearance" width="180"
+                  height="180" />
+              </div>
+              <div class="card-info">
+                <div>
+                  <div class="card-name">Cold Brew</div>
+                  <p class="card-desc">Slow-steeped 18 hours for a smooth, low-acid concentrate. Bold and naturally
+                    sweet on ice.</p>
+                </div>
+                <div class="card-footer">
+                  <span class="card-price">Rs. 450</span>
+                  <span class="card-add-btn" aria-hidden="true">+ Add</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="menu-card" data-product-id="mocha" tabindex="0"
+              aria-label="Mocha — Rs. 480. Click to view details and add to cart.">
+              <div class="card-img">
+                <img src="images/mocha.jpg"
+                  alt="A rich mocha in a ceramic mug topped with whipped cream and a dark chocolate drizzle" width="180"
+                  height="180" />
+              </div>
+              <div class="card-info">
+                <div>
+                  <div class="card-name">Mocha</div>
+                  <p class="card-desc">Rich espresso meets dark chocolate and steamed milk, topped with whipped cream. A
+                    dessert in a cup.</p>
+                </div>
+                <div class="card-footer">
+                  <span class="card-price">Rs. 480</span>
+                  <span class="card-add-btn" aria-hidden="true">+ Add</span>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- — Snacks — -->
+        <div class="menu-category">
+          <h3 class="category-heading">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path
+                d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.501 5.501 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z" />
+            </svg>
+            Snacks
+          </h3>
+          <div class="menu-grid">
+
+            <article class="menu-card" data-product-id="croissant" tabindex="0"
+              aria-label="Croissant — Rs. 320. Click to view details and add to cart.">
+              <div class="card-img">
+                <img src="images/croissant.jpg" alt="A freshly baked golden butter croissant on a rustic wooden board"
+                  width="180" height="180" />
+              </div>
+              <div class="card-info">
+                <div>
+                  <div class="card-name">Croissant</div>
+                  <p class="card-desc">Slow-proofed butter puff pastry, baked every morning. Golden and flaky outside,
+                    pillowy within.</p>
+                </div>
+                <div class="card-footer">
+                  <span class="card-price">Rs. 320</span>
+                  <span class="card-add-btn" aria-hidden="true">+ Add</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="menu-card" data-product-id="cheesecake" tabindex="0"
+              aria-label="Cheesecake — Rs. 450. Click to view details and add to cart.">
+              <div class="card-img">
+                <img src="images/cheesecake.jpg"
+                  alt="A slice of creamy New York-style cheesecake with wild berry compote on a white plate" width="180"
+                  height="180" />
+              </div>
+              <div class="card-info">
+                <div>
+                  <div class="card-name">Cheesecake</div>
+                  <p class="card-desc">Dense, creamy New York-style slice on a graham cracker base with wild berry
+                    compote. Served chilled.</p>
+                </div>
+                <div class="card-footer">
+                  <span class="card-price">Rs. 450</span>
+                  <span class="card-add-btn" aria-hidden="true">+ Add</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="menu-card" data-product-id="cookie" tabindex="0"
+              aria-label="Chocolate Cookie — Rs. 180. Click to view details and add to cart.">
+              <div class="card-img">
+                <img src="images/cookie.jpg"
+                  alt="A thick double-chocolate chip cookie on parchment paper showing a gooey molten centre"
+                  width="180" height="180" />
+              </div>
+              <div class="card-info">
+                <div>
+                  <div class="card-name">Chocolate Cookie</div>
+                  <p class="card-desc">Double-chocolate chip, baked fresh daily. Crisp on the edges, perfectly molten in
+                    the center.</p>
+                </div>
+                <div class="card-footer">
+                  <span class="card-price">Rs. 180</span>
+                  <span class="card-add-btn" aria-hidden="true">+ Add</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="menu-card" data-product-id="muffin" tabindex="0"
+              aria-label="Blueberry Muffin — Rs. 220. Click to view details and add to cart.">
+              <div class="card-img">
+                <img src="images/muffin.jpg"
+                  alt="A domed blueberry muffin with a golden sugar-crunch top fresh from the oven" width="180"
+                  height="180" />
+              </div>
+              <div class="card-info">
+                <div>
+                  <div class="card-name">Blueberry Muffin</div>
+                  <p class="card-desc">Light sky-high muffin bursting with fresh blueberries and a demerara sugar crunch
+                    top.</p>
+                </div>
+                <div class="card-footer">
+                  <span class="card-price">Rs. 220</span>
+                  <span class="card-add-btn" aria-hidden="true">+ Add</span>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════════════════ FOOTER ══════════════════════ -->
+  <footer id="contact" aria-label="Site footer">
+    <div class="container footer-inner">
+
+      <div class="footer-brand">
+        <a href="#home" class="logo" aria-label="Beancraft home">
+          <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M8 16h18l-2.5 15H10.5L8 16z" fill="#A5836F" fill-opacity="0.25" stroke="#A5836F" stroke-width="1.8"
+              stroke-linejoin="round" />
+            <path d="M26 19h4a3.5 3.5 0 010 7h-4" stroke="#A5836F" stroke-width="1.8" stroke-linecap="round" />
+            <path d="M13 12 Q14.5 9.5 13 7" stroke="#A5836F" stroke-width="1.6" stroke-linecap="round" />
+            <path d="M18 12 Q19.5 9.5 18 7" stroke="#A5836F" stroke-width="1.6" stroke-linecap="round" />
+            <path d="M23 12 Q24.5 9.5 23 7" stroke="#A5836F" stroke-width="1.6" stroke-linecap="round" />
+          </svg>
+          <span class="logo-text">Beancraft</span>
+        </a>
+        <p>Where hand-sourced beans meet unhurried ritual. Every cup crafted with intention and served with care.</p>
+        <div class="social-links" aria-label="Social media">
+          <a href="#" class="social-link" aria-label="Beancraft on Instagram">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+            </svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Beancraft on Facebook">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              aria-hidden="true">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
+            </svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Beancraft on Twitter">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              aria-hidden="true">
+              <path
+                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#best-sellers">Best Sellers</a></li>
+          <li><a href="#menu">Full Menu</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-contact">
+        <h4>Visit Us</h4>
+        <address>
+          <span>17 Seaview Boulevard,<br>DHA Phase 2, Islamabad</span>
+          <a href="tel:+922134567890">+92 21 3456 7890</a>
+          <a href="mailto:hello@beancraft.pk">hello@beancraft.pk</a>
+          <span>Mon – Sun · 7:00 AM – 11:00 PM</span>
+        </address>
+      </div>
+
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2026 Beancraft. All rights reserved. · Made with ☕ in Islamabad</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ══════════════════════ PRODUCT MODAL ══════════════════════ -->
+  <div id="product-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+    <div class="modal-overlay" id="modal-overlay"></div>
+    <div class="modal-content">
+      <button class="modal-close" id="modal-close" aria-label="Close product details">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+          stroke-linecap="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+      </button>
+      <div class="modal-img-wrap">
+        <img id="modal-img" src="" alt="" width="520" height="293" />
+      </div>
+      <div class="modal-body">
+        <h2 id="modal-title" class="modal-title"></h2>
+        <p id="modal-desc" class="modal-desc"></p>
+        <p id="modal-price" class="modal-price"></p>
+        <div class="qty-row" role="group" aria-label="Quantity">
+          <button class="qty-btn" id="qty-minus" aria-label="Decrease quantity">−</button>
+          <span class="qty-val" id="qty-val" aria-live="polite" aria-atomic="true">1</span>
+          <button class="qty-btn" id="qty-plus" aria-label="Increase quantity">+</button>
+        </div>
+        <button class="btn btn-primary modal-add-btn" id="modal-add-btn">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════ CART DRAWER ══════════════════════ -->
+  <div id="cart-drawer" class="cart-drawer" hidden>
+    <div class="cart-overlay" id="cart-overlay"></div>
+    <div class="cart-panel" role="region" aria-label="Shopping cart">
+      <div class="cart-header">
+        <h2>Your Order</h2>
+        <button class="cart-close" id="cart-close" aria-label="Close cart">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" aria-hidden="true">
+            <line x1="18" y1="6" x2="6" y2="18" />
+            <line x1="6" y1="6" x2="18" y2="18" />
+          </svg>
+        </button>
+      </div>
+      <div id="cart-items" class="cart-items"></div>
+      <div class="cart-footer">
+        <div class="cart-total-row">
+          <span class="cart-total-label">Total</span>
+          <span class="cart-total-amount" id="cart-total">Rs. 0</span>
+        </div>
+        <button class="btn btn-primary checkout-btn" id="checkout-btn">Place Order</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
