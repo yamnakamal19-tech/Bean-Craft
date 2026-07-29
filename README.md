@@ -22,7 +22,11 @@ Frontend Interface).
 ### Product Detail & Ordering
 ![Product detail — order view 1](./screenshots/order-1.png)
 ![Product detail — order view 2](./screenshots/order-2.png)
+
+### Placing Order
 ![Place order](./screenshots/place-order.png)
+
+### Thanks for Ordering
 ![Order confirmation](./screenshots/thanks-for-order.png)
 
 ### Contact
