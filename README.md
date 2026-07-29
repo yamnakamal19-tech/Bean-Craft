@@ -66,7 +66,7 @@ No frameworks, no build tools required — the fundamentals only.
 Clone the repo and open it directly — no installation needed:
 
 ```bash
-git clone https://github.com/<your-username>/Bean-Craft.git
+git clone https://github.com/<yamnakamal19-tech>/Bean-Craft.git
 cd Bean-Craft
 ```
 
