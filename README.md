@@ -108,7 +108,7 @@ Building BeanCraft helped me practice:
 
 ## Contact
 
-**Yamna**
-First-year BS Artificial Intelligence student, CUST Islamabad
+**Yamna Kamal**
+BS Artificial Intelligence student, CUST Islamabad
 [LinkedIn](https://www.linkedin.com/in/yamna-alvi-119b9234b/)
 [yamnakamal19@gmail.com](mailto:yamnakamal19@gmail.com)
